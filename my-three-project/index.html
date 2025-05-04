@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three.js Grid Game</title>
+
+  <style>
+    body { margin: 0; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <div id="container" style="position: relative; width: 100vw; height: 100vh; overflow: hidden;">
+    <div id="osmb" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <canvas id="three-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></canvas>
+  </div>
+
+  <!-- Main Vite entry point -->
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- External libraries -->
+  <script src="https://cdn.osmbuildings.org/OSMBuildings-GL.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/suncalc/suncalc.js"></script>
